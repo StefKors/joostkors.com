@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	$('.list_projects').click(function() {
 		$(this).toggleClass('top');
-		// $('.overlay').toggleClass()
+		$('.arrow').toggleClass('img_flip');
 	});
 
 });

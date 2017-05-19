@@ -17,7 +17,34 @@ body {
   font-family: 'PT Sans', sans-serif;
   text-rendering: optimizeLegibility;
   margin: 70px;
-  background-color: red;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+/* ----------- Animation ----------- */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .black {
@@ -151,21 +178,31 @@ p a:before {
   position: fixed;
   width: 100%;
   top: auto;
+  height: 20px;
   bottom: 0;
   left: 0;
   padding: 20px;
   padding-left: 70px;
   background-color: #F8F8F8;
+  -webkit-transition: all .6s;
+  transition: all .6s;
 }
 
-.list_projects img {
+.arrow {
   margin-left: 15px;
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 .top {
-  top: 0;
-  -webkit-transition: all 1s ease-in-out 0s;
-  transition: all 1s ease-in-out 0s;
+  height: 90vh;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.img_flip {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .project_img {
