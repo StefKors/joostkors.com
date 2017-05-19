@@ -16,18 +16,156 @@
 body {
   font-family: 'PT Sans', sans-serif;
   text-rendering: optimizeLegibility;
-  margin: 0;
+  margin: 70px;
+}
+
+.black {
+  color: #000000;
+}
+
+.left {
+  width: 40vw;
+  float: left;
 }
 
 h1 {
   font-family: 'League Spartan';
-  font-size: 38px;
+  font-size: 28px;
   color: #7A7A7A;
   letter-spacing: 0.71px;
-  line-height: 32px;
+  line-height: 6px;
+  display:inline-block;
 }
 
 a {
-  font-family: 'League Spartan';
   text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.34px;
+  display: block;
+}
+
+a h1 {
+  position: relative;
+}
+
+a h1:before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  margin-top: 4px;
+  margin-left: -7px;
+  height: 15px;
+  display: block;
+  background-color: #FBF38D;
+  visibility: hidden;
+  z-index: -20;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+a h1:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.list_projects a {
+  position: relative;
+  display: inline-block;
+  font-family: 'League Spartan';
+}
+
+.list_projects a:before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  margin-top: 7px;
+  margin-left: -5px;
+  height: 10px;
+  display: block;
+  background-color: #FBF38D;
+  visibility: hidden;
+  z-index: -20;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.list_projects a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+p a {
+  position: relative;
+  display: inline-block;
+}
+
+p a:before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  margin-top: 18px;
+  margin-left: -2px;
+  height: 10px;
+  display: block;
+  background-color: #FBF38D;
+  visibility: visible;
+  z-index: -20;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.about {
+  font-family: PTSans-Regular;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.37px;
+  line-height: 36px;
+}
+
+.section_line {
+  border-bottom: 1px solid black;
+  display: block;
+  width: 100px;
+  margin: 30px 0 20px 0;
+}
+
+.list_projects {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  padding-left: 70px;
+  background-color: #F8F8F8;
+}
+
+.list_projects img {
+  margin-left: 20px;
+}
+
+.project_img {
+  background: url(img/joost.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size:     cover;
+  float: right;
+  width: 30vw;
+  height: 75vh;
 }
