@@ -67,7 +67,6 @@ h1 {
 
 a {
   text-decoration: none;
-  font-size: 14px;
   color: #000000;
   letter-spacing: 0.34px;
   display: block;
@@ -187,6 +186,10 @@ p a:before {
   transition: all .6s;
 }
 
+.list_projects a {
+  font-size: 14px;
+}
+
 .arrow {
   margin-left: 15px;
   -webkit-transform: scale(-1, -1);
@@ -205,11 +208,10 @@ p a:before {
 }
 
 .project_img {
-  background: url(img/joost.jpg);
+  background: url();
   background-repeat:no-repeat;
   background-position: center center;
   background-size:     cover;
   float: right;
   width: 30vw;
-  height: 75vh;
 }
