@@ -24,7 +24,7 @@ body {
 }
 
 .left {
-  width: 40vw;
+  max-width: 420px;
   float: left;
 }
 
@@ -149,6 +149,7 @@ p a:before {
 .list_projects {
   position: fixed;
   width: 100%;
+  top: auto;
   bottom: 0;
   left: 0;
   padding: 20px;
@@ -157,7 +158,13 @@ p a:before {
 }
 
 .list_projects img {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+.top {
+  top: 0;
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
 }
 
 .project_img {
