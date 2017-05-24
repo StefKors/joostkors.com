@@ -16,7 +16,7 @@
 body {
   font-family: 'PT Sans', serif;
   text-rendering: optimizeLegibility;
-  margin: 70px;
+  padding: 70px;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -53,7 +53,13 @@ body {
 
 .left {
   max-width: 420px;
-  float: left;
+  /*float: left;*/
+  display: inline-block;
+}
+
+.right {
+  display: inline-block;
+  float: right;
 }
 
 h1 {
@@ -70,6 +76,7 @@ a {
   color: #000000;
   letter-spacing: 0.34px;
   display: block;
+  font-family: 'League Spartan';
 }
 
 a h1 {
@@ -103,13 +110,13 @@ a h1:hover:before {
   transition: all 0.1s ease-in-out 0s;
 }
 
-.list_projects a {
+.all_projects_url {
   position: relative;
   display: inline-block;
   font-family: 'League Spartan';
 }
 
-.list_projects a:before {
+.all_projects_url:before {
   content: "";
   position: absolute;
   width: 110%;
@@ -128,7 +135,7 @@ a h1:hover:before {
   transition: all 0.1s ease-in-out 0s;
 }
 
-.list_projects a:hover:before {
+.all_projects_url:hover:before {
   visibility: visible;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
@@ -174,16 +181,15 @@ p a:before {
 
 .list_projects {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: auto;
   height: 20px;
   bottom: 0;
   left: 0;
-  padding: 20px;
-  padding-left: 70px;
+  padding: 20px 70px;
   background-color: #F8F8F8;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .list_projects a {
@@ -212,6 +218,55 @@ p a:before {
   background-repeat:no-repeat;
   background-position: center center;
   background-size:     cover;
-  float: right;
-  width: 30vw;
+  width: 45vw;
+}
+
+.all_projects {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  padding-right: 70px;
+}
+
+.column {
+  -webkit-box-flex: calc(100% / 3);
+      -ms-flex: calc(100% / 3);
+          flex: calc(100% / 3);
+  display: inline-block;
+}
+
+.column a {
+  display: inline-block;
+}
+
+.column a p {
+  font-family: 'PT Sans', serif;
+}
+
+@media screen and (max-width: 1100px) {
+  .right {
+    width: 40vw;
+  }
+  .column {
+    -webkit-box-flex: calc(100% / 2);
+        -ms-flex: calc(100% / 2);
+            flex: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+.column {
+  -webkit-box-flex: calc(100% / 1);
+      -ms-flex: calc(100% / 1);
+          flex: calc(100% / 1);
+}
 }
