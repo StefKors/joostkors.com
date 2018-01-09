@@ -14,6 +14,8 @@ section {
   text-align: center;
   max-width: 800px;
   margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 section h1 {
@@ -45,9 +47,11 @@ section p {
   line-height: 38px;
 }
 
-img {
+section img {
   background-blend-mode: multiply;
-  margin: 50px;
+  margin: 10px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 footer {
@@ -64,9 +68,10 @@ footer {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   margin-left: 80px;
+  margin-top: 50px;
 }
 
 .fixed {
   position: fixed !important;
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
