@@ -223,7 +223,8 @@ p a:before {
   background-repeat:no-repeat;
   background-position: center center;
   background-size:     cover;
-  width: 100%;
+  max-width: 100%;
+  max-height: 80vh;
 }
 
 .all_projects {

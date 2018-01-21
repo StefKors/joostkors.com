@@ -7,21 +7,26 @@ $(document).ready(function() {
 		$('.arrow').toggleClass('img_flip');
 	});
 
-	var joost = 'Joost Kors, aged 27, is a designer with an interest in concrete buildings, landscape art and unconventional spacitial planning. With a background in ceramics as building material Joost explores heritage and innovation. Now as a recent graduate, he is available for work.';
+	var joost =
+		'Joost Kors, aged 27, is a designer with an interest in concrete buildings, landscape art and unconventional spacitial planning. With a background in ceramics as building material Joost explores heritage and innovation. Now as a recent graduate, he is available for work.';
 
-	var aho = 'The Fake News Data Sprint is pleased to have Jayson Harsin (The ... teaching, design and participation formats for the creation and use of';
+	var aho =
+		'An exploration of material, with a hands-on approach. The result is a public environment discussing meaning of hearth, fire and place.';
 
-	var nai = 'Dance is a performing art form consisting of purposefully selected sequences of human movement. This movement has aesthetic and symbolic value, and is acknowledged as dance by performers and observers within a particular culture. ';
+	var nai =
+		'How can we adapt climate design for a building with an unknown future. I propose a decentralized modular climate system.';
 
-	var pavilion = 'Dance is a performing art form consisting of purposefully selected sequences of human movement. This movement has aesthetic and symbolic value, and is acknowledged as dance by performers and observers within a particular culture. ';
+	var pavilion =
+		'This building aims to spark the imagination for the possibilities in architecture, and function as a testbed for new facade systems developed by the university.';
 
-	var transits = 'The potato is a starchy, tuberous crop from the perennial nightshade Solanum tuberosum. The word "potato" may refer either to the plant itself or to the edible tuber.';
+	var transits =
+		'Graphic work for an exhibition by Neil Forrest. Proud adventures of men trapped in ice are intersected with relics of Norwegian history.';
 
-	var binckhorst = 'Dance Dance Revolution, abbreviated DDR and also known as Dancing Stage in earlier games in Europe and Australasia, and some other games in Japan, is a music video game series produced by Konami.';
+	var binckhorst =
+		'Four weeks to produce a masterplan with 14 people! This urban challenge focusses on bottom-up strategies for large scale redevelopment.';
 
-	var hybrid = 'Maize, also known as corn, is a large grain plant first domesticated by indigenous peoples in southern Mexico about 10,000 years ago.';
-
-	var dsm = 'Mar hoe zit het noow mae de twedde vörm die zö duk vurkumt ien het Rivierengebied? Volgens t Rheinisches Wörterbuch kumt pieper van de ';
+	var hybrid =
+		'Exciting and innovative combinations in use are what hybrids are all about. Full of interesting social and spatial schemes, this building aims to develop a lively urban landscape.';
 
 	changeimg('joost');
 
@@ -34,25 +39,29 @@ $(document).ready(function() {
 	$(window).on('scroll', function() {
 		scrollPosition = $(this).scrollTop();
 		if (scrollPosition >= 50) {
-			$("#back").addClass('fixed');
+			$('#back').addClass('fixed');
 		} else {
-			$("#back").removeClass('fixed');
+			$('#back').removeClass('fixed');
 		}
 	});
 
 	function changeimg(this_one) {
-		if ($('.project_img').attr("src") != 'img/' + this_one + '.jpg') {
+		if ($('.project_img').attr('src') != 'img/' + this_one + '.jpg') {
 			// if not same change img
 			// fadeout current image
 			$('.project_img').fadeOut(200, function() {
 				console.log(this);
 				// fade in new image
-				$('.project_img').attr("src", 'img/' + this_one + '.jpg').fadeIn(200);
+				$('.project_img')
+					.attr('src', 'img/' + this_one + '.jpg')
+					.fadeIn(200);
 			});
 
 			// do same thing with the text
 			$('.paragraph').fadeOut(200, function() {
-				$('.paragraph').html(eval(this_one)).fadeIn(200);
+				$('.paragraph')
+					.html(eval(this_one))
+					.fadeIn(200);
 			});
 		}
 	}
