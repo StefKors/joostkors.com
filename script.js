@@ -8,7 +8,7 @@ $(document).ready(function() {
 	});
 
 	var joost =
-		'Joost Kors, aged 37, is a designer with an interest in concrete buildings, landscape art and unconventional spacitial planning. With a background in ceramics as building material Joost explores heritage and innovation. Now as a recent graduate, he is available for work.';
+		'I’m a recently graduated architect with a passion for communicating ideas. My best skills are solving spatial problems and creating convincing visual concepts. Beyond my love for architecture I enjoy all forms of creating, including design, art and graphics.';
 
 	var aho =
 		'An exploration of material, with a hands-on approach. The result is a public environment discussing meaning of hearth, fire and place.';

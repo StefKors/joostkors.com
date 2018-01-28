@@ -174,7 +174,8 @@ p a:before {
   color: #000000;
   letter-spacing: 0.37px;
   line-height: 36px;
-  width: 90%;
+  width: 40vw;
+  max-width: 600px;
 }
 
 .section_line {
