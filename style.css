@@ -272,9 +272,21 @@ p a:before {
 }
 
 @media screen and (max-width: 650px) {
-.column {
-  -webkit-box-flex: calc(100% / 1);
-      -ms-flex: calc(100% / 1);
-          flex: calc(100% / 1);
-}
+  .column {
+    -webkit-box-flex: calc(100% / 1);
+        -ms-flex: calc(100% / 1);
+            flex: calc(100% / 1);
+  }
+  .left {
+    min-width: 90%;
+  }
+  h1 {
+    word-wrap: break-word;
+    line-height: normal;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .about {
+    width: auto;
+  }
 }
