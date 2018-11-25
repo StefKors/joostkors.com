@@ -28,6 +28,9 @@ $(document).ready(function() {
 	var hybrid =
 		'Exciting and innovative combinations in use are what hybrids are all about. Full of interesting social and spatial schemes, this building aims to develop a lively urban landscape.';
 
+	var hospital =
+		"A large expansion to Oslo's main hospital, this project is defined by it's complex program and site.";
+		
 	changeimg('joost');
 
 	$('h1').mouseover(function() {
